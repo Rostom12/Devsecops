@@ -63,7 +63,7 @@ Devsecops/
 
 
 
-git clone <url_du_depot>
+git clone https://github.com/Rostom12/Devsecops
 cd Devsecops
 
 Construire les images Docker :
