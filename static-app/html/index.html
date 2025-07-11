@@ -2,9 +2,86 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8" />
-  <title>Application Statique</title>
+  <title>Accueil Projet DevSecOps</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #121212;
+      color: #e0e0e0;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    header {
+      background-color: #1f2937;
+      padding: 1.5rem 2rem;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.2rem;
+      color: #f9fafb;
+    }
+    main {
+      flex-grow: 1;
+      padding: 2rem;
+      max-width: 800px;
+      margin: auto;
+      text-align: center;
+    }
+    main h2 {
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+    main p {
+      font-size: 1.1rem;
+      margin-bottom: 2rem;
+      color: #cbd5e1;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+    nav a {
+      background-color: #2563eb;
+      color: white;
+      padding: 0.8rem 1.4rem;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background-color 0.3s ease;
+    }
+    nav a:hover {
+      background-color: #1d4ed8;
+    }
+    footer {
+      background-color: #1f2937;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #9ca3af;
+      box-shadow: 0 -2px 5px rgba(0,0,0,0.5);
+    }
+  </style>
 </head>
 <body>
-  <h1>Bienvenue dans l'application statique !</h1>
+  <header>
+    <h1>Bienvenue sur le Projet DevSecOps</h1>
+  </header>
+  <main>
+    <h2>Applications déployées</h2>
+    <p>Voici les différentes applications disponibles dans l’environnement Docker de développement :</p>
+    <nav>
+      <a href="http://localhost:8081" target="_blank" rel="noopener">App Statique (accès direct)</a>
+    </nav>
+  </main>
+  <footer>
+    &copy; 2025 Projet DevSecOps - Equipe Ingénierie
+  </footer>
 </body>
 </html>
